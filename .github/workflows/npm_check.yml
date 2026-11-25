@@ -2,14 +2,6 @@ name: NPM - Check
 
 on:
   workflow_dispatch:
-    inputs:
-      pr_number:
-        description: "PR to check"
-        required: true
-  pull_request:
-    paths:
-      - "extensions/**"
-    branches: [main, master]
 
 jobs:
   setup:
