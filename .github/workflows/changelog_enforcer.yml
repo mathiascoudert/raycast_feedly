@@ -1,10 +1,6 @@
 name: "Changelog Enforcer"
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review, labeled, unlabeled]
-    paths:
-      - "extensions/**"
-    branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   changelog:
