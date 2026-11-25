@@ -1,11 +1,7 @@
 name: "Metadata Image Enforcer"
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths:
-      - "extensions/**/metadata/**"
-    branches: [main, master]
+  workflow_dispatch:
 
 jobs:
   metadata-images:
